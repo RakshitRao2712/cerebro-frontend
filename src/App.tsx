@@ -1,5 +1,3 @@
-import { useEffect } from 'react'
-import { initShaderBackground } from './shaderBackground'
 import { LogoMarquee } from '@/components/ui/logo-marquee'
 import type { Logo } from '@/components/ui/logo-marquee'
 
@@ -23,9 +21,6 @@ const logos: Logo[] = [
 ]
 
 export default function App() {
-  useEffect(() => {
-    initShaderBackground()
-  }, [])
 
   return (
     <div className="hero-overlay">
