@@ -344,7 +344,7 @@ export default function GlyphPortal({
     <section ref={sectionRef} id={uid} className={className} aria-label={text}
       style={{ "--gp-length": length, "--gp-characters": Array.from(text).length, ...style } as CSSProperties}>
       <style>{`
-        ${q}{--gp-paper:#fff;--gp-ink:#0c1212;--gp-field:#0b3b2a;--gp-foreground:#fbfbfa;position:relative;isolation:isolate;background:var(--gp-paper);color:var(--gp-ink);font-family:Arial,sans-serif;}
+        ${q}{--gp-paper:#000;--gp-ink:#ff8c00;--gp-field:#ff8c00;--gp-foreground:#ff8c00;position:relative;isolation:isolate;background:var(--gp-paper);color:var(--gp-ink);font-family:Arial,sans-serif;}
         ${q}>[data-gp-viewport]{position:absolute;inset:0 auto auto 0;height:100vh;height:100svh;width:0;pointer-events:none;visibility:hidden;}
         ${q} [data-gp-pin]{position:relative;height:var(--gp-height,100svh);overflow:clip;isolation:isolate;container-type:size;}
         ${q} [data-gp-field]{position:absolute;inset:0;background:var(--gp-field);opacity:0;pointer-events:none;}
@@ -391,7 +391,7 @@ export default function GlyphPortal({
       <div data-gp-viewport aria-hidden="true" />
       <div data-gp-pin>
         <div data-gp-field aria-hidden="true" inert>
-          {background ?? <div data-gp-default-field style={{ position: "absolute", inset: 0, transform: "scale(var(--gp-field-scale,1))", background: "radial-gradient(circle at 18% 8%, rgba(68,125,98,.72), transparent 34%), radial-gradient(circle at 82% 20%, rgba(251,251,250,.12), transparent 28%), radial-gradient(circle at 48% 78%, rgba(9,48,35,.5), transparent 44%), linear-gradient(135deg,#0b3b2a 0%,#14573f 48%,#082d22 100%)" }} />}
+          {background ?? <div data-gp-default-field style={{ position: "absolute", inset: 0, transform: "scale(var(--gp-field-scale,1))", background: "radial-gradient(circle at 18% 8%, rgba(255,160,40,.72), transparent 34%), radial-gradient(circle at 82% 20%, rgba(255,220,150,.12), transparent 28%), radial-gradient(circle at 48% 78%, rgba(180,90,0,.5), transparent 44%), linear-gradient(135deg,#ff8c00 0%,#e07800 48%,#cc6a00 100%)" }} />}
         </div>
         <svg data-gp-art aria-hidden="true" focusable="false">
           <defs>
