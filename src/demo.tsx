@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState, ReactNode } from "react";
+import { useEffect, useState, type ReactNode } from "react";
 import GlyphPortal from "@/components/ui/glyph-portal";
 
 const settings = { word: "CEREBRO", scrollLength: 2.4, interactive: true, annotations: false };
