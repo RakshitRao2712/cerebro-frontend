@@ -20,7 +20,7 @@ body {
 }
 
 body {
-  @apply bg-white text-gray-900;
+  @apply bg-black text-white;
 }
 
 #app {
