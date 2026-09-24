@@ -65,7 +65,7 @@ const InfiniteSlider = memo(function InfiniteSlider({
 
 export default function BrandSlider({ brandList }: BrandSliderProps) {
   return (
-    <section className="relative w-full overflow-hidden pb-20 pt-10">
+    <section className="relative w-full overflow-hidden pb-20 -mt-12">
       <div className="flex items-center justify-center gap-4 mb-12 px-4 max-w-3xl mx-auto opacity-50">
         <div className="h-[1px] flex-1 bg-gradient-to-r from-transparent to-white/20"></div>
         <p className="text-xs font-medium text-white tracking-wide uppercase">

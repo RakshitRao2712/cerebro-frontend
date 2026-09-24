@@ -29,7 +29,7 @@ export default function HeroSection({ avatarList }: HeroSectionProps) {
         </h1>
 
         <p className="mt-6 max-w-2xl mx-auto text-base md:text-lg text-white/60 leading-relaxed font-medium">
-          At shadcn space, we help small startups tackle the world&apos;s biggest challenges with tailored
+          At Cerebro, we help small startups tackle the world&apos;s biggest challenges with tailored
           solutions, guiding you from strategy to success in a competitive market.
         </p>
 
