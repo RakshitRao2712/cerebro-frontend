@@ -69,7 +69,7 @@ export default function BrandSlider({ brandList }: BrandSliderProps) {
       <div className="flex items-center justify-center gap-4 mb-12 px-4 max-w-3xl mx-auto opacity-50">
         <div className="h-[1px] flex-1 bg-gradient-to-r from-transparent to-white/20"></div>
         <p className="text-xs font-medium text-white tracking-wide uppercase">
-          Loved by 1000+ big and small brands around the worlds
+          Docker, Kubernetes, Ansible, Terraform
         </p>
         <div className="h-[1px] flex-1 bg-gradient-to-l from-transparent to-white/20"></div>
       </div>
@@ -79,14 +79,17 @@ export default function BrandSlider({ brandList }: BrandSliderProps) {
           {[...brandList, ...brandList].map((brand, i) => (
             <div
               key={`${brand.name}-${i}`}
-              className="flex items-center justify-center shrink-0"
+              className="flex items-center justify-center shrink-0 gap-4"
             >
               <img
                 src={brand.lightimg || brand.image}
                 alt={brand.name}
-                className="h-8 md:h-10 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300"
+                className="h-8 md:h-10 w-auto object-contain transition-transform duration-300 hover:scale-105"
                 loading="lazy"
               />
+              <span className="text-xl md:text-2xl font-bold tracking-tight text-white/90">
+                {brand.name}
+              </span>
             </div>
           ))}
         </InfiniteSlider>
