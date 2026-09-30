@@ -6,6 +6,7 @@ import BrandSlider from "@/components/ui/hero-01-utils/brand-slider";
 import type { BrandList } from "@/components/ui/hero-01-utils/brand-slider";
 
 import FeaturesBlock from "@/components/ui/features-4";
+import Comparison03 from "@/components/ui/comparison-03";
 
 export default function AgencyHeroSection() {
   const avatarList: AvatarList[] = [
@@ -56,6 +57,7 @@ export default function AgencyHeroSection() {
       <main>
         <HeroSection avatarList={avatarList} />
         <BrandSlider brandList={brandList} />
+        <Comparison03 />
         <FeaturesBlock />
       </main>
     </div>
