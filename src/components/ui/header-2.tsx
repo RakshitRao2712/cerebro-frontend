@@ -8,7 +8,7 @@ import { useScroll } from '@/components/ui/use-scroll';
 
 /**
  * Header component that renders the main navigation bar.
- * I mobile menu, sticky positioning, and scroll-based background effects.
+ * I mobscroll-based background effects.
  */
 export function Header() {
 	const [open, setOpen] = React.useState(false);
