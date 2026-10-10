@@ -1,5 +1,4 @@
 import * as LucideIcons from "lucide-react";
-import React from "react";
 
 export function IconPlaceholder({
   lucide,

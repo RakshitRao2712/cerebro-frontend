@@ -13,4 +13,8 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
   },
+  server: {
+    host: '127.0.0.1',
+    proxy: { '/api': { target: process.env.CEREBRO_API_URL || 'http://127.0.0.1:8080', changeOrigin: false } },
+  },
 })

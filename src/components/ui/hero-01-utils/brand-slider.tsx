@@ -1,6 +1,6 @@
 "use client";
 
-import { memo, useState, useEffect } from "react";
+import { memo, useEffect } from "react";
 import { useMotionValue, animate, motion } from "motion/react";
 import useMeasure from "react-use-measure";
 
@@ -25,7 +25,6 @@ const InfiniteSlider = memo(function InfiniteSlider({
 }) {
   const [ref, { width }] = useMeasure();
   const translation = useMotionValue(0);
-  const [key, setKey] = useState(0);
 
   useEffect(() => {
     const contentSize = width + gap;
@@ -44,7 +43,7 @@ const InfiniteSlider = memo(function InfiniteSlider({
     });
 
     return controls?.stop;
-  }, [key, translation, duration, width, gap]);
+  }, [translation, duration, width, gap]);
 
   return (
     <div className="overflow-hidden">
