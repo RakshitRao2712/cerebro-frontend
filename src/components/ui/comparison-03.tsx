@@ -1,5 +1,5 @@
 // Comparison 3 from Hirael <https://hirael.com/blocks/comparison/comparison-03>
-// MIT · Mohammad Shehadeh · https://github.com/MohammadShehadeh/hirael
+// MIT · · https://github.com/MohammadShehadeh/hirael
 
 import {
   ArrowRight,
